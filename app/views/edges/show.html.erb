@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Child:</strong>
+  <%= @edge.child_id %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @edge.parent_id %>
+</p>
+
+<p>
+  <strong>Child klass:</strong>
+  <%= @edge.child_klass %>
+</p>
+
+<%= link_to 'Edit', edit_edge_path(@edge) %> |
+<%= link_to 'Back', edges_path %>
