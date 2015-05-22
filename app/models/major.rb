@@ -8,4 +8,8 @@ class Major
 
   validates :name, presence: true
 
+  def requirement_tree
+    requirement.subtree
+  end
+
 end
