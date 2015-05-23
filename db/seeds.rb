@@ -1,4 +1,4 @@
-Dir.chdir Rails.root.join 'db'
+Dir.chdir Rails.root.join 'preprocess'
 
 # Procedures
 def to_req(req)
