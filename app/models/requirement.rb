@@ -24,7 +24,7 @@ class Requirement
 
   def named_subtree(width = nil)
     width ||= [children.count { |child| child.is_a? Requirement },10].max
-    { name: name, children: (children.sample(width).map(&:named_subtree) << ( { name: "..." } if children.size > width)).compact }
+    { name: name, children: (children.sample(width).map(&:named_subtree) << ( { name: "+#{children.size - width } more" } if children.size > width)).compact }
   end 
 
 end
