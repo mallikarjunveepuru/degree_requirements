@@ -32,3 +32,9 @@ Seed the initial data into the database:
 ``` bash
 $ rake cequel:seed
 ```
+
+Start the server:
+``` bash
+$ gem install foreman
+$ foreman start
+```
